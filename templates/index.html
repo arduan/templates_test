@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+ <ul>
+        {% for lan in langs %}
+        <li>{{ lan }}</li>
+        {% endfor %}
+ </ul>
+
+{% with name='Виталий' age=29 %}
+    <div>
+        <p>Имя: {{ name }}</p>
+        <p>Возраст: {{ age }}</p>
+    </div>
+{% endwith %}
+</body>
+</html>
