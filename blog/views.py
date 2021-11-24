@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 
 def index_blog(request):
-    return HttpResponse('Hello World')
+    return HttpResponse('Привет Мир')
+
+
+def blog(request):
+    return HttpResponse('Привет Виталий')
