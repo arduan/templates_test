@@ -6,9 +6,12 @@ from test_app.views import index
 from blog import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    # path('', index),
+     path('', index),
+    # path('', views.index_blog),
     # path('', views.blog),
-    path('', views.index_blog),
+    path('admin/', admin.site.urls),
+
+
+
 
 ]
